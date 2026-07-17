@@ -1,0 +1,305 @@
+/* ============================================
+   THEME STYLESHEET - Dark Mode & Colors
+   ============================================ */
+
+/* ============================================
+   DARK MODE THEME
+   ============================================ */
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode main {
+    background-color: var(--dark-bg);
+}
+
+body.dark-mode .featured-cards,
+body.dark-mode .learning-path {
+    background-color: var(--dark-bg);
+}
+
+/* ============================================
+   CODE BLOCKS
+   ============================================ */
+
+pre {
+    background: var(--light);
+    border: 1px solid var(--light-dark);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    overflow-x: auto;
+    margin: var(--spacing-lg) 0;
+}
+
+body.dark-mode pre {
+    background: var(--dark-surface-light);
+    border-color: rgba(148, 163, 184, 0.1);
+    color: var(--dark-text);
+}
+
+code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    display: block;
+}
+
+inline code {
+    background: var(--light);
+    color: var(--primary);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+}
+
+body.dark-mode inline code {
+    background: var(--dark-surface-light);
+    color: #818cf8;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-lg) 0;
+}
+
+table th {
+    background: var(--light);
+    color: var(--text);
+    font-weight: 600;
+    padding: var(--spacing-md);
+    text-align: left;
+    border: 1px solid var(--light-dark);
+}
+
+body.dark-mode table th {
+    background: var(--dark-surface-light);
+    color: var(--dark-text);
+    border-color: rgba(148, 163, 184, 0.1);
+}
+
+table td {
+    padding: var(--spacing-md);
+    border: 1px solid var(--light-dark);
+}
+
+body.dark-mode table td {
+    border-color: rgba(148, 163, 184, 0.1);
+}
+
+table tr:hover {
+    background: var(--light);
+}
+
+body.dark-mode table tr:hover {
+    background: var(--dark-surface-light);
+}
+
+/* ============================================
+   LIST STYLES
+   ============================================ */
+
+ul {
+    list-style-position: inside;
+    margin: var(--spacing-lg) 0;
+    padding-left: var(--spacing-lg);
+}
+
+ol {
+    list-style-position: inside;
+    margin: var(--spacing-lg) 0;
+    padding-left: var(--spacing-lg);
+}
+
+li {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ============================================
+   LINK COLORS
+   ============================================ */
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+body.dark-mode a {
+    color: var(--primary-light);
+}
+
+body.dark-mode a:hover {
+    color: #c7d2fe;
+}
+
+/* ============================================
+   BLOCKQUOTES
+   ============================================ */
+
+blockquote {
+    border-left: 4px solid var(--primary);
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    background: var(--light);
+    border-radius: var(--radius-md);
+}
+
+body.dark-mode blockquote {
+    background: var(--dark-surface-light);
+}
+
+blockquote p {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* ============================================
+   ALERTS & NOTIFICATIONS
+   ============================================ */
+
+.alert {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-lg) 0;
+    border-left: 4px solid;
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.alert-info {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.alert-success {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: var(--success);
+    color: var(--success);
+}
+
+.alert-warning {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+.alert-danger {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+body.dark-mode .alert {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+
+.badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: var(--primary);
+    color: white;
+}
+
+.badge-secondary {
+    background: var(--secondary);
+}
+
+.badge-success {
+    background: var(--success);
+}
+
+.badge-warning {
+    background: var(--warning);
+    color: var(--text);
+}
+
+.badge-danger {
+    background: var(--danger);
+}
+
+/* ============================================
+   TEXT COLORS
+   ============================================ */
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-warning {
+    color: var(--warning);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.text-muted {
+    color: var(--text-light);
+}
+
+/* ============================================
+   BACKGROUND COLORS
+   ============================================ */
+
+.bg-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.bg-secondary {
+    background: var(--secondary);
+    color: white;
+}
+
+.bg-light {
+    background: var(--light);
+}
+
+body.dark-mode .bg-light {
+    background: var(--dark-surface);
+}
+
+/* ============================================
+   GRADIENTS
+   ============================================ */
+
+.gradient-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.gradient-secondary {
+    background: linear-gradient(135deg, var(--secondary) 0%, #d946ef 100%);
+}
+
+.gradient-accent {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+}

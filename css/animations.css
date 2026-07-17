@@ -1,0 +1,407 @@
+/* ============================================
+   ANIMATIONS STYLESHEET
+   ============================================ */
+
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes slide-in-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes code-reveal {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes number-count {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   UTILITY ANIMATION CLASSES
+   ============================================ */
+
+.fade-in {
+    animation: fade-in 0.6s ease-out;
+}
+
+.fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+}
+
+.fade-in-down {
+    animation: fade-in-down 0.8s ease-out;
+}
+
+.fade-in-left {
+    animation: fade-in-left 0.8s ease-out;
+}
+
+.fade-in-right {
+    animation: fade-in-right 0.8s ease-out;
+}
+
+.scale-in {
+    animation: scale-in 0.6s ease-out;
+}
+
+.bounce {
+    animation: bounce 0.6s ease-out;
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.slide-in-up {
+    animation: slide-in-up 0.6s ease-out;
+}
+
+.slide-in-down {
+    animation: slide-in-down 0.6s ease-out;
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   HOVER ANIMATIONS
+   ============================================ */
+
+.hover-lift {
+    transition: all var(--transition-normal);
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hover-scale {
+    transition: transform var(--transition-normal);
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-glow {
+    transition: all var(--transition-normal);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* ============================================
+   LOADING ANIMATIONS
+   ============================================ */
+
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(99, 102, 241, 0.2);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.loading-skeleton {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+body.dark-mode .loading-skeleton {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+/* ============================================
+   ENTRANCE ANIMATIONS
+   ============================================ */
+
+.entrance-fade {
+    animation: fade-in 0.8s ease-out 0.1s both;
+}
+
+.entrance-up {
+    animation: fade-in-up 0.8s ease-out 0.2s both;
+}
+
+.entrance-down {
+    animation: fade-in-down 0.8s ease-out 0.2s both;
+}
+
+.entrance-left {
+    animation: fade-in-left 0.8s ease-out 0.2s both;
+}
+
+.entrance-right {
+    animation: fade-in-right 0.8s ease-out 0.2s both;
+}
+
+/* ============================================
+   STAGGER ANIMATIONS (for lists)
+   ============================================ */
+
+.stagger-children > * {
+    animation: fade-in-up 0.6s ease-out;
+}
+
+.stagger-children > :nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > :nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > :nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > :nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > :nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > :nth-child(6) { animation-delay: 0.6s; }
+.stagger-children > :nth-child(7) { animation-delay: 0.7s; }
+.stagger-children > :nth-child(8) { animation-delay: 0.8s; }
+
+/* ============================================
+   INTERACTIVE ANIMATIONS
+   ============================================ */
+
+.btn:active {
+    animation: scale 0.1s ease-out;
+}
+
+@keyframes scale {
+    to {
+        transform: scale(0.95);
+    }
+}
+
+/* ============================================
+   TRANSITION UTILITIES
+   ============================================ */
+
+.transition-fast {
+    transition: all var(--transition-fast);
+}
+
+.transition-normal {
+    transition: all var(--transition-normal);
+}
+
+.transition-slow {
+    transition: all var(--transition-slow);
+}
+
+/* ============================================
+   PROGRESS BAR ANIMATION
+   ============================================ */
+
+.progress-bar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+    animation: shimmer 2s infinite;
+}
+
+/* ============================================
+   TEXT ANIMATIONS
+   ============================================ */
+
+.text-gradient-animation {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 25%, #06b6d4 50%, var(--secondary) 75%, var(--primary) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease infinite;
+}
+
+/* ============================================
+   FLIP ANIMATION
+   ============================================ */
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.flip {
+    animation: flip 0.6s ease-out;
+}
+
+/* ============================================
+   FOCUS ANIMATIONS
+   ============================================ */
+
+input:focus,
+textarea:focus,
+select:focus {
+    animation: scale-in 0.2s ease-out;
+}

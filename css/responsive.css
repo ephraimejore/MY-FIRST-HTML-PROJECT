@@ -1,0 +1,451 @@
+/* ============================================
+   RESPONSIVE STYLESHEET
+   ============================================ */
+
+/* ============================================
+   LARGE SCREENS (1200px+)
+   ============================================ */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 var(--spacing-xl);
+    }
+}
+
+/* ============================================
+   TABLETS & MEDIUM SCREENS (768px - 1023px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-illustration {
+        display: none;
+    }
+
+    .nav-menu {
+        gap: var(--spacing-lg);
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .path-steps {
+        gap: var(--spacing-md);
+    }
+
+    .step-arrow {
+        display: none;
+    }
+
+    .step {
+        min-width: 150px;
+    }
+}
+
+/* ============================================
+   SMALL TABLETS & LARGE PHONES (600px - 767px)
+   ============================================ */
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: var(--spacing-xl) 0;
+        gap: var(--spacing-md);
+    }
+
+    body.dark-mode .nav-menu {
+        background-color: var(--dark-surface);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* Search */
+    .search-wrapper {
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    /* Cards */
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .featured-cards h2 {
+        font-size: 1.8rem;
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    /* Learning Path */
+    .path-steps {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .step {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .step-arrow {
+        display: none;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    /* Scroll to top */
+    .scroll-to-top {
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ============================================
+   MOBILE PHONES (up to 599px)
+   ============================================ */
+
+@media (max-width: 599px) {
+    :root {
+        font-size: 13px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Navigation */
+    .navbar {
+        padding: var(--spacing-md) 0;
+    }
+
+    .nav-wrapper {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+        top: 55px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    /* Search */
+    .search-section {
+        padding: var(--spacing-2xl) 0;
+        margin-top: -var(--spacing-2xl);
+    }
+
+    /* Buttons */
+    .btn {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 0.95rem;
+    }
+
+    .btn-large {
+        padding: var(--spacing-lg) var(--spacing-xl);
+        font-size: 1rem;
+    }
+
+    /* Cards */
+    .stat-card {
+        padding: var(--spacing-lg);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .doc-card {
+        padding: var(--spacing-lg);
+    }
+
+    .card-icon {
+        font-size: 2rem;
+    }
+
+    /* Statistics */
+    .statistics {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    /* Learning Path */
+    .learning-path {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .step {
+        padding: var(--spacing-md);
+        min-width: auto;
+        width: 100%;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: var(--spacing-2xl) var(--spacing-md);
+        margin: var(--spacing-xl) 0;
+    }
+
+    .cta-section h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--spacing-2xl) 0 var(--spacing-lg);
+    }
+
+    .footer-content {
+        gap: var(--spacing-xl);
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* Table Responsive */
+    table {
+        font-size: 0.85rem;
+    }
+
+    table th,
+    table td {
+        padding: var(--spacing-sm);
+    }
+
+    /* Scroll to top */
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: var(--spacing-md);
+        right: var(--spacing-md);
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   EXTRA SMALL DEVICES (up to 360px)
+   ============================================ */
+
+@media (max-width: 360px) {
+    :root {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero-title {
+        font-size: 1.3rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION
+   ============================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: var(--spacing-2xl) 0;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .navbar,
+    .search-section,
+    .scroll-to-top,
+    .footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    a {
+        color: black;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY - REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
