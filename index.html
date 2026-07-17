@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTML Encyclopedia Pro - The most comprehensive HTML reference guide for web developers">
+    <meta name="author" content="HTML Encyclopedia Pro">
     <meta name="theme-color" content="#6366f1">
+    <meta property="og:title" content="HTML Encyclopedia Pro - Complete HTML Reference">
+    <meta property="og:description" content="Master HTML with the most comprehensive reference guide for beginners and professionals">
+    <meta property="og:type" content="website">
     <title>HTML Encyclopedia Pro - Complete HTML Reference</title>
     
     <!-- Stylesheets -->
@@ -15,34 +19,40 @@
     <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
+    <!-- Skip to main content link -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <h1>📚 HTML Encyclopedia Pro</h1>
-                </div>
-                <div class="nav-menu" id="navMenu">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#reference" class="nav-link">Reference</a>
-                    <a href="#tutorials" class="nav-link">Tutorials</a>
-                    <a href="#playground" class="nav-link">Playground</a>
-                    <a href="#about" class="nav-link">About</a>
-                </div>
-                <div class="nav-controls">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                        <span class="hamburger"></span>
-                    </button>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#home" class="logo" aria-label="HTML Encyclopedia Pro - Home">
+                        <span class="logo-icon">📚</span>
+                        <span>HTML Encyclopedia Pro</span>
+                    </a>
+                    <div class="nav-menu" id="navMenu">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="pages/reference.html" class="nav-link">Reference</a>
+                        <a href="pages/tutorials.html" class="nav-link">Tutorials</a>
+                        <a href="pages/playground.html" class="nav-link">Playground</a>
+                        <a href="pages/about.html" class="nav-link">About</a>
+                    </div>
+                    <div class="nav-controls">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <span class="theme-icon">🌙</span>
+                        </button>
+                        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                            <span class="hamburger"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="hero-background">
@@ -53,8 +63,8 @@
                     <h1 class="hero-title">Master HTML Today</h1>
                     <p class="hero-subtitle">The most comprehensive, beginner-friendly HTML reference guide with interactive examples and expert guidance</p>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary" id="startBtn">Get Started</button>
-                        <button class="btn btn-secondary" id="exploreBtn">Explore Docs</button>
+                        <a href="pages/tutorials.html" class="btn btn-primary" id="startBtn">Get Started</a>
+                        <a href="pages/reference.html" class="btn btn-secondary" id="exploreBtn">Explore Docs</a>
                     </div>
                 </div>
                 <div class="hero-illustration">
@@ -72,6 +82,7 @@
         <!-- Search Section -->
         <section class="search-section">
             <div class="container">
+                <h2>Find What You Need</h2>
                 <div class="search-wrapper">
                     <input 
                         type="text" 
@@ -89,6 +100,7 @@
         <!-- Statistics Section -->
         <section class="statistics">
             <div class="container">
+                <h2>By The Numbers</h2>
                 <div class="stats-grid">
                     <div class="stat-card fade-in-up">
                         <div class="stat-number" data-count="150">0</div>
@@ -219,7 +231,7 @@
             <div class="container">
                 <h2>Ready to Build Amazing Websites?</h2>
                 <p>Start your HTML journey today with our interactive playground</p>
-                <button class="btn btn-primary btn-large" id="playgroundBtn">Open Playground</button>
+                <a href="pages/playground.html" class="btn btn-primary btn-large" id="playgroundBtn">Open Playground</a>
             </div>
         </section>
     </main>
@@ -236,26 +248,26 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#reference">Reference</a></li>
-                        <li><a href="#tutorials">Tutorials</a></li>
-                        <li><a href="#playground">Playground</a></li>
+                        <li><a href="pages/reference.html">Reference</a></li>
+                        <li><a href="pages/tutorials.html">Tutorials</a></li>
+                        <li><a href="pages/playground.html">Playground</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                        <a href="#" aria-label="GitHub">⚙️</a>
-                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="https://twitter.com" aria-label="Visit us on Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
+                        <a href="https://github.com" aria-label="Visit us on GitHub" target="_blank" rel="noopener noreferrer">⚙️</a>
+                        <a href="https://linkedin.com" aria-label="Visit us on LinkedIn" target="_blank" rel="noopener noreferrer">💼</a>
                     </div>
                 </div>
             </div>
