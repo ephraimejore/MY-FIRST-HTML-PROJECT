@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about links, navigation, and the anchor element in HTML.">
+    <title>Links & Navigation - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><h1>📚 HTML Encyclopedia Pro</h1></div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span></button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="hamburger"></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Links & Navigation</h1>
+                    <p class="hero-subtitle">Master the anchor element and create effective navigation structures</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <div class="container">
+                <article style="max-width: 800px;">
+                    <h2>The &lt;a&gt; Element</h2>
+                    <p>The anchor element creates hyperlinks to other pages, files, or locations within the same page.</p>
+                    <pre><code>&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code></pre>
+
+                    <h2>Essential Attributes</h2>
+                    <table>
+                        <tr><th>Attribute</th><th>Description</th></tr>
+                        <tr><td>href</td><td>The URL the link points to (required)</td></tr>
+                        <tr><td>target</td><td>Where to open the link (_blank, _self, _parent, _top)</td></tr>
+                        <tr><td>title</td><td>Tooltip text on hover</td></tr>
+                        <tr><td>rel</td><td>Relationship between documents (nofollow, external, etc.)</td></tr>
+                        <tr><td>download</td><td>Prompts download instead of navigation</td></tr>
+                    </table>
+
+                    <h2>Types of Links</h2>
+                    
+                    <h3>External Links</h3>
+                    <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+                    <h3>Internal Links</h3>
+                    <pre><code>&lt;a href="/about/team.html"&gt;Our Team&lt;/a&gt;</code></pre>
+
+                    <h3>Anchor Links (Bookmarks)</h3>
+                    <pre><code>&lt;a href="#section-id"&gt;Jump to Section&lt;/a&gt;
+
+&lt;section id="section-id"&gt;
+  &lt;h2&gt;Section Title&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+
+                    <h3>Email Links</h3>
+                    <pre><code>&lt;a href="mailto:info@example.com"&gt;Send Email&lt;/a&gt;</code></pre>
+
+                    <h3>Phone Links</h3>
+                    <pre><code>&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;</code></pre>
+
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Use descriptive link text that explains where the link goes</li>
+                        <li>Avoid "Click here" or "Read more" as link text</li>
+                        <li>Use target="_blank" sparingly for external links</li>
+                        <li>Include rel="noopener noreferrer" when using target="_blank"</li>
+                        <li>Ensure links are keyboard accessible</li>
+                        <li>Provide visual focus indicators for accessibility</li>
+                    </ul>
+
+                    <h2>Navigation Example</h2>
+                    <pre><code>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+                    <h2>Accessibility Guidelines</h2>
+                    <ul>
+                        <li>Use meaningful link text</li>
+                        <li>Indicate external links with an icon or text</li>
+                        <li>Color should not be the only indicator of a link</li>
+                        <li>Ensure sufficient color contrast</li>
+                        <li>Include title attributes for additional context</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='text.html'">← Text Elements</button>
+                    <button class="btn btn-primary" onclick="window.location.href='lists.html'">Lists & Collections →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

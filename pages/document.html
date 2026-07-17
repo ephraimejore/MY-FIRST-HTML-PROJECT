@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about HTML document structure elements including html, head, body, and more.">
+    <title>Document Structure - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>📚 HTML Encyclopedia Pro</h1>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                    <a href="#" class="nav-link">Tutorials</a>
+                    <a href="#" class="nav-link">Playground</a>
+                    <a href="#" class="nav-link">About</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Document Structure</h1>
+                    <p class="hero-subtitle">Master the foundation of every HTML document with essential structural elements</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="doc-section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 250px; gap: var(--spacing-xl);">
+                    <!-- Main Content -->
+                    <article>
+                        <!-- Introduction -->
+                        <div class="doc-content">
+                            <h2>Introduction</h2>
+                            <p>The HTML document structure elements form the backbone of every webpage. These elements define the basic layout and organization of your HTML document, including the root element, metadata, and content areas.</p>
+                        </div>
+
+                        <!-- HTML Element -->
+                        <div class="doc-content">
+                            <h2>&lt;html&gt; Element</h2>
+                            <p>The root element that wraps all other HTML elements.</p>
+                            
+                            <h3>Syntax</h3>
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;!-- Content goes here --&gt;
+&lt;/html&gt;</code></pre>
+
+                            <h3>Attributes</h3>
+                            <table>
+                                <tr><th>Attribute</th><th>Description</th></tr>
+                                <tr><td>lang</td><td>Specifies the language of the document</td></tr>
+                                <tr><td>dir</td><td>Sets the text direction (ltr or rtl)</td></tr>
+                            </table>
+
+                            <h3>Browser Output</h3>
+                            <div class="example-box">
+                                <p><strong>Note:</strong> The &lt;html&gt; tag itself is not visible on the page. It's a container for all other HTML elements.</p>
+                            </div>
+                        </div>
+
+                        <!-- Head Element -->
+                        <div class="doc-content">
+                            <h2>&lt;head&gt; Element</h2>
+                            <p>Contains metadata and links to scripts and stylesheets. Information in the &lt;head&gt; is not displayed on the page.</p>
+                            
+                            <h3>Syntax</h3>
+                            <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;</code></pre>
+
+                            <h3>Common Head Elements</h3>
+                            <table>
+                                <tr><th>Element</th><th>Purpose</th></tr>
+                                <tr><td>&lt;meta&gt;</td><td>Defines metadata about the document</td></tr>
+                                <tr><td>&lt;title&gt;</td><td>Defines the title shown in browser tab</td></tr>
+                                <tr><td>&lt;link&gt;</td><td>Links to external resources like CSS</td></tr>
+                                <tr><td>&lt;style&gt;</td><td>Defines internal CSS styles</td></tr>
+                                <tr><td>&lt;script&gt;</td><td>Includes JavaScript code</td></tr>
+                            </table>
+                        </div>
+
+                        <!-- Body Element -->
+                        <div class="doc-content">
+                            <h2>&lt;body&gt; Element</h2>
+                            <p>Contains all the visible page content that appears in the browser window.</p>
+                            
+                            <h3>Syntax</h3>
+                            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
+  &lt;p&gt;This content is visible in the browser.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+                            <h3>Attributes</h3>
+                            <table>
+                                <tr><th>Attribute</th><th>Description</th></tr>
+                                <tr><td>onload</td><td>Script to run when page loads</td></tr>
+                                <tr><td>onunload</td><td>Script to run when page unloads</td></tr>
+                            </table>
+                        </div>
+
+                        <!-- Best Practices -->
+                        <div class="doc-content">
+                            <h2>Best Practices</h2>
+                            <ul>
+                                <li>Always include DOCTYPE declaration at the beginning</li>
+                                <li>Set the lang attribute on the &lt;html&gt; element for accessibility</li>
+                                <li>Include meta charset in the head for proper text encoding</li>
+                                <li>Set a descriptive title for each page</li>
+                                <li>Include viewport meta tag for responsive design</li>
+                                <li>Place scripts at the end of the body for better performance</li>
+                            </ul>
+                        </div>
+
+                        <!-- Common Mistakes -->
+                        <div class="doc-content">
+                            <h2>Common Mistakes</h2>
+                            <div class="mistake-box">
+                                <h4>❌ Missing DOCTYPE</h4>
+                                <pre><code>&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                <p><strong>Problem:</strong> Without DOCTYPE, the browser may render in quirks mode.</p>
+                            </div>
+
+                            <div class="mistake-box">
+                                <h4>✅ Correct DOCTYPE</h4>
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Accessibility -->
+                        <div class="doc-content">
+                            <h2>Accessibility</h2>
+                            <ul>
+                                <li>Use <code>lang</code> attribute to specify document language</li>
+                                <li>Provide meaningful page titles</li>
+                                <li>Use proper heading hierarchy (h1-h6)</li>
+                                <li>Include alt text for images</li>
+                                <li>Use semantic HTML elements</li>
+                            </ul>
+                        </div>
+
+                        <!-- Related Elements -->
+                        <div class="doc-content">
+                            <h2>Related Elements</h2>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--spacing-md);">
+                                <a href="#" class="doc-card" style="padding: var(--spacing-md);">
+                                    <strong>&lt;meta&gt;</strong>
+                                    <p style="font-size: 0.9rem; margin-top: var(--spacing-sm);">Metadata</p>
+                                </a>
+                                <a href="#" class="doc-card" style="padding: var(--spacing-md);">
+                                    <strong>&lt;title&gt;</strong>
+                                    <p style="font-size: 0.9rem; margin-top: var(--spacing-sm);">Page Title</p>
+                                </a>
+                                <a href="text.html" class="doc-card" style="padding: var(--spacing-md);">
+                                    <strong>&lt;h1&gt; - &lt;h6&gt;</strong>
+                                    <p style="font-size: 0.9rem; margin-top: var(--spacing-sm);">Headings</p>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Sidebar -->
+                    <aside style="border-left: 2px solid var(--primary); padding-left: var(--spacing-lg);">
+                        <h3>Quick Navigation</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><a href="#" style="display: block; padding: var(--spacing-sm) 0;">Introduction</a></li>
+                            <li><a href="#" style="display: block; padding: var(--spacing-sm) 0;">&lt;html&gt;</a></li>
+                            <li><a href="#" style="display: block; padding: var(--spacing-sm) 0;">&lt;head&gt;</a></li>
+                            <li><a href="#" style="display: block; padding: var(--spacing-sm) 0;">&lt;body&gt;</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='../index.html'">← Back to Home</button>
+                    <button class="btn btn-primary" onclick="window.location.href='text.html'">Next: Text Elements →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📚 HTML Encyclopedia Pro</h4>
+                    <p>Your complete guide to mastering HTML.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#reference">Reference</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

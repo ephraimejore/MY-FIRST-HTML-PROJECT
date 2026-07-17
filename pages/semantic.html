@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master semantic HTML5 elements for creating meaningful and accessible web pages.">
+    <title>Semantic HTML5 - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><h1>📚 HTML Encyclopedia Pro</h1></div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span></button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="hamburger"></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Semantic HTML5</h1>
+                    <p class="hero-subtitle">Build accessible and meaningful web structures with semantic elements</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <div class="container">
+                <article style="max-width: 800px;">
+                    <h2>What is Semantic HTML?</h2>
+                    <p>Semantic HTML uses elements that clearly describe their purpose and meaning to both browsers and developers. This improves accessibility, SEO, and code maintainability.</p>
+
+                    <h2>Structural Elements</h2>
+                    <table>
+                        <tr><th>Element</th><th>Purpose</th></tr>
+                        <tr><td>&lt;header&gt;</td><td>Introductory content or navigation</td></tr>
+                        <tr><td>&lt;nav&gt;</td><td>Navigation links</td></tr>
+                        <tr><td>&lt;main&gt;</td><td>Main content of the page</td></tr>
+                        <tr><td>&lt;article&gt;</td><td>Independent, self-contained content</td></tr>
+                        <tr><td>&lt;section&gt;</td><td>Thematic grouping of content</td></tr>
+                        <tr><td>&lt;aside&gt;</td><td>Sidebar or related content</td></tr>
+                        <tr><td>&lt;footer&gt;</td><td>Page footer</td></tr>
+                    </table>
+
+                    <h2>Layout Example</h2>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Site Title&lt;/h1&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Article Title&lt;/h2&gt;
+      &lt;p&gt;Article content...&lt;/p&gt;
+    &lt;/article&gt;
+
+    &lt;aside&gt;
+      &lt;h3&gt;Related Links&lt;/h3&gt;
+    &lt;/aside&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;© 2026 Company&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                    <h2>Content Elements</h2>
+                    <table>
+                        <tr><th>Element</th><th>Purpose</th></tr>
+                        <tr><td>&lt;time&gt;</td><td>Represents a date/time</td></tr>
+                        <tr><td>&lt;mark&gt;</td><td>Highlighted or marked text</td></tr>
+                        <tr><td>&lt;code&gt;</td><td>Computer code</td></tr>
+                        <tr><td>&lt;kbd&gt;</td><td>User keyboard input</td></tr>
+                        <tr><td>&lt;var&gt;</td><td>Variable in mathematics/programming</td></tr>
+                    </table>
+
+                    <h2>Benefits of Semantic HTML</h2>
+                    <ul>
+                        <li><strong>Accessibility:</strong> Screen readers understand page structure</li>
+                        <li><strong>SEO:</strong> Search engines better understand content</li>
+                        <li><strong>Maintainability:</strong> Clearer code for other developers</li>
+                        <li><strong>Mobile-friendly:</strong> Better rendering on all devices</li>
+                        <li><strong>Future-proof:</strong> Works with new technologies</li>
+                    </ul>
+
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Use &lt;header&gt; for introductory content</li>
+                        <li>Use &lt;nav&gt; for navigation links</li>
+                        <li>Use &lt;main&gt; for page's main content (only one per page)</li>
+                        <li>Use &lt;article&gt; for standalone content</li>
+                        <li>Use &lt;section&gt; for thematic grouping</li>
+                        <li>Use &lt;aside&gt; for supplementary content</li>
+                        <li>Use &lt;footer&gt; for page footer</li>
+                        <li>Use proper heading hierarchy (h1-h6)</li>
+                    </ul>
+
+                    <h2>Common Mistakes</h2>
+                    <div style="background: rgba(239, 68, 68, 0.1); padding: var(--spacing-lg); border-radius: var(--radius-md); margin: var(--spacing-lg) 0;">
+                        <h4>❌ Incorrect: Using div for everything</h4>
+                        <pre><code>&lt;div class="header"&gt;...&lt;/div&gt;
+&lt;div class="main"&gt;...&lt;/div&gt;
+&lt;div class="footer"&gt;...&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: var(--spacing-lg); border-radius: var(--radius-md); margin: var(--spacing-lg) 0;">
+                        <h4>✅ Correct: Using semantic elements</h4>
+                        <pre><code>&lt;header&gt;...&lt;/header&gt;
+&lt;main&gt;...&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='media.html'">← Media & Embedding</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../index.html'">Back to Home →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

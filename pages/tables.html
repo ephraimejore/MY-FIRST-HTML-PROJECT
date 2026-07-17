@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn to create structured data tables in HTML with proper semantics.">
+    <title>Tables & Data - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><h1>📚 HTML Encyclopedia Pro</h1></div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span></button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="hamburger"></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Tables & Data</h1>
+                    <p class="hero-subtitle">Master HTML table elements for presenting structured data</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <div class="container">
+                <article style="max-width: 800px;">
+                    <h2>Table Elements</h2>
+                    <p>HTML provides semantic elements for creating well-structured data tables.</p>
+
+                    <h2>Basic Table Structure</h2>
+                    <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+                    <h2>Table Elements Reference</h2>
+                    <table>
+                        <tr><th>Element</th><th>Purpose</th></tr>
+                        <tr><td>&lt;table&gt;</td><td>Container for table content</td></tr>
+                        <tr><td>&lt;thead&gt;</td><td>Groups header content</td></tr>
+                        <tr><td>&lt;tbody&gt;</td><td>Groups body content</td></tr>
+                        <tr><td>&lt;tfoot&gt;</td><td>Groups footer content</td></tr>
+                        <tr><td>&lt;tr&gt;</td><td>Table row</td></tr>
+                        <tr><td>&lt;th&gt;</td><td>Header cell</td></tr>
+                        <tr><td>&lt;td&gt;</td><td>Data cell</td></tr>
+                    </table>
+
+                    <h2>Complete Table Example</h2>
+                    <pre><code>&lt;table&gt;
+  &lt;caption&gt;Annual Sales Report&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Quarter&lt;/th&gt;
+      &lt;th&gt;Revenue&lt;/th&gt;
+      &lt;th&gt;Growth&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Q1&lt;/td&gt;
+      &lt;td&gt;$100,000&lt;/td&gt;
+      &lt;td&gt;5%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Q2&lt;/td&gt;
+      &lt;td&gt;$120,000&lt;/td&gt;
+      &lt;td&gt;20%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+                    <h2>Colspan and Rowspan</h2>
+                    <p>Merge cells across multiple rows or columns:</p>
+                    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;Spans 2 columns&lt;/td&gt;
+    &lt;td&gt;Normal cell&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="2"&gt;Spans 2 rows&lt;/td&gt;
+    &lt;td&gt;Cell 1&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+                    <h2>Accessibility Features</h2>
+                    <ul>
+                        <li>Use &lt;caption&gt; to describe table purpose</li>
+                        <li>Use &lt;th&gt; for header cells with scope attribute</li>
+                        <li>Use &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; for organization</li>
+                        <li>Use headers attribute to associate cells with headers</li>
+                        <li>Avoid using tables for layout - use CSS Grid instead</li>
+                    </ul>
+
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Keep tables simple and focused</li>
+                        <li>Use descriptive headers</li>
+                        <li>Avoid excessive colspan/rowspan</li>
+                        <li>Make tables responsive for mobile</li>
+                        <li>Use CSS for styling, not HTML attributes</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='lists.html'">← Lists & Collections</button>
+                    <button class="btn btn-primary" onclick="window.location.href='forms.html'">Forms & Input →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

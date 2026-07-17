@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master HTML form elements and create interactive user interfaces.">
+    <title>Forms & Input - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><h1>📚 HTML Encyclopedia Pro</h1></div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span></button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="hamburger"></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Forms & Input</h1>
+                    <p class="hero-subtitle">Create interactive forms and collect user input effectively</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <div class="container">
+                <article style="max-width: 800px;">
+                    <h2>Basic Form Structure</h2>
+                    <pre><code>&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
+  
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+                    <h2>Input Types</h2>
+                    <table>
+                        <tr><th>Type</th><th>Purpose</th></tr>
+                        <tr><td>text</td><td>Single line text input</td></tr>
+                        <tr><td>password</td><td>Masked password input</td></tr>
+                        <tr><td>email</td><td>Email address with validation</td></tr>
+                        <tr><td>number</td><td>Numeric input</td></tr>
+                        <tr><td>date</td><td>Date picker</td></tr>
+                        <tr><td>checkbox</td><td>Multiple choice</td></tr>
+                        <tr><td>radio</td><td>Single choice from group</td></tr>
+                        <tr><td>submit</td><td>Submit button</td></tr>
+                        <tr><td>reset</td><td>Reset form</td></tr>
+                        <tr><td>file</td><td>File upload</td></tr>
+                    </table>
+
+                    <h2>Form Elements</h2>
+                    <p><strong>&lt;label&gt;</strong> - Associates text with form elements</p>
+                    <pre><code>&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;</code></pre>
+
+                    <p><strong>&lt;textarea&gt;</strong> - Multi-line text input</p>
+                    <pre><code>&lt;textarea name="message" rows="5" cols="40"&gt;&lt;/textarea&gt;</code></pre>
+
+                    <p><strong>&lt;select&gt;</strong> - Dropdown list</p>
+                    <pre><code>&lt;select name="country"&gt;
+  &lt;option value="us"&gt;United States&lt;/option&gt;
+  &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+                    <p><strong>&lt;fieldset&gt;</strong> - Groups form elements</p>
+                    <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Personal Information&lt;/legend&gt;
+  &lt;label&gt;&lt;input type="checkbox"&gt; Subscribe&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+
+                    <h2>Form Validation</h2>
+                    <ul>
+                        <li>required - Field must be filled</li>
+                        <li>min/max - Number range validation</li>
+                        <li>pattern - Custom validation pattern</li>
+                        <li>type - Automatic validation (email, number, etc.)</li>
+                    </ul>
+
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Always associate labels with inputs</li>
+                        <li>Use appropriate input types</li>
+                        <li>Implement client-side validation</li>
+                        <li>Always validate on the server too</li>
+                        <li>Provide clear error messages</li>
+                        <li>Make forms keyboard accessible</li>
+                        <li>Use fieldsets for grouping related fields</li>
+                    </ul>
+
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li>Use label elements for all inputs</li>
+                        <li>Use fieldset/legend for grouped fields</li>
+                        <li>Provide clear instructions</li>
+                        <li>Use ARIA attributes when needed</li>
+                        <li>Ensure keyboard navigation works</li>
+                        <li>Display error messages clearly</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='tables.html'">← Tables & Data</button>
+                    <button class="btn btn-primary" onclick="window.location.href='media.html'">Media & Embedding →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

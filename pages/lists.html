@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master HTML list elements including ul, ol, li, and dl.">
+    <title>Lists & Collections - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><h1>📚 HTML Encyclopedia Pro</h1></div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span></button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="hamburger"></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Lists & Collections</h1>
+                    <p class="hero-subtitle">Organize content with unordered, ordered, and definition lists</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <div class="container">
+                <article style="max-width: 800px;">
+                    <h2>Introduction</h2>
+                    <p>Lists are used to organize and present related items. HTML provides three types of lists, each suited for different purposes.</p>
+
+                    <h2>&lt;ul&gt; - Unordered List</h2>
+                    <p>Creates a list where the order doesn't matter. Items are typically marked with bullets.</p>
+                    <pre><code>&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    <p>Result:</p>
+                    <ul>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+
+                    <h2>&lt;ol&gt; - Ordered List</h2>
+                    <p>Creates a numbered list. Used when order matters.</p>
+                    <pre><code>&lt;ol&gt;
+  &lt;li&gt;First step&lt;/li&gt;
+  &lt;li&gt;Second step&lt;/li&gt;
+  &lt;li&gt;Third step&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    <p>Result:</p>
+                    <ol>
+                        <li>First step</li>
+                        <li>Second step</li>
+                        <li>Third step</li>
+                    </ol>
+
+                    <h2>&lt;li&gt; - List Item</h2>
+                    <p>Represents a single item in a list.</p>
+                    <p>Always used inside &lt;ul&gt; or &lt;ol&gt; elements.</p>
+
+                    <h2>&lt;dl&gt; - Description List</h2>
+                    <p>Used for term-definition pairs.</p>
+                    <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+  
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+                    <h2>List Attributes</h2>
+                    <table>
+                        <tr><th>Element</th><th>Attribute</th><th>Purpose</th></tr>
+                        <tr><td>&lt;ol&gt;</td><td>type</td><td>Type of numbering (1, a, A, i, I)</td></tr>
+                        <tr><td>&lt;ol&gt;</td><td>start</td><td>Starting number</td></tr>
+                        <tr><td>&lt;ol&gt;</td><td>reversed</td><td>Reverse numbering order</td></tr>
+                        <tr><td>&lt;li&gt;</td><td>value</td><td>Specific value for the item</td></tr>
+                    </table>
+
+                    <h2>Nested Lists</h2>
+                    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Fruits
+    &lt;ul&gt;
+      &lt;li&gt;Apples&lt;/li&gt;
+      &lt;li&gt;Oranges&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vegetables&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Use lists for grouping related items</li>
+                        <li>Use &lt;ol&gt; when sequence matters (recipes, instructions)</li>
+                        <li>Use &lt;ul&gt; for unordered items (features, benefits)</li>
+                        <li>Use &lt;dl&gt; for term-definition pairs</li>
+                        <li>Avoid excessive nesting</li>
+                        <li>Use CSS for custom styling instead of type attributes</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='links.html'">← Links & Navigation</button>
+                    <button class="btn btn-primary" onclick="window.location.href='tables.html'">Tables & Data →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn to embed media elements including images, audio, and video in HTML.">
+    <title>Media & Embedding - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><h1>📚 HTML Encyclopedia Pro</h1></div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span></button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="hamburger"></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Media & Embedding</h1>
+                    <p class="hero-subtitle">Embed images, audio, and video in your HTML documents</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <div class="container">
+                <article style="max-width: 800px;">
+                    <h2>&lt;img&gt; - Images</h2>
+                    <p>The most basic way to embed images in HTML.</p>
+                    <pre><code>&lt;img src="image.jpg" alt="Description of image" width="400" height="300"&gt;</code></pre>
+
+                    <h2>Image Attributes</h2>
+                    <table>
+                        <tr><th>Attribute</th><th>Purpose</th></tr>
+                        <tr><td>src</td><td>Image file URL (required)</td></tr>
+                        <tr><td>alt</td><td>Alternative text for accessibility</td></tr>
+                        <tr><td>width</td><td>Image width in pixels</td></tr>
+                        <tr><td>height</td><td>Image height in pixels</td></tr>
+                        <tr><td>title</td><td>Tooltip on hover</td></tr>
+                    </table>
+
+                    <h2>&lt;picture&gt; - Responsive Images</h2>
+                    <pre><code>&lt;picture&gt;
+  &lt;source media="(max-width: 600px)" srcset="small.jpg"&gt;
+  &lt;source media="(max-width: 1000px)" srcset="medium.jpg"&gt;
+  &lt;img src="large.jpg" alt="Responsive image"&gt;
+&lt;/picture&gt;</code></pre>
+
+                    <h2>&lt;audio&gt; - Audio Files</h2>
+                    <pre><code>&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audio.ogg" type="audio/ogg"&gt;
+  Your browser doesn't support audio element.
+&lt;/audio&gt;</code></pre>
+
+                    <h2>&lt;video&gt; - Video Files</h2>
+                    <pre><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;
+  Your browser doesn't support video element.
+&lt;/video&gt;</code></pre>
+
+                    <h2>Video/Audio Attributes</h2>
+                    <table>
+                        <tr><th>Attribute</th><th>Purpose</th></tr>
+                        <tr><td>controls</td><td>Show playback controls</td></tr>
+                        <tr><td>autoplay</td><td>Start playing automatically</td></tr>
+                        <tr><td>loop</td><td>Repeat when finished</td></tr>
+                        <tr><td>muted</td><td>Start without sound</td></tr>
+                        <tr><td>preload</td><td>Load strategy (auto, metadata, none)</td></tr>
+                    </table>
+
+                    <h2>&lt;figure&gt; & &lt;figcaption&gt;</h2>
+                    <p>Group images or media with captions:</p>
+                    <pre><code>&lt;figure&gt;
+  &lt;img src="image.jpg" alt="Scenic landscape"&gt;
+  &lt;figcaption&gt;A beautiful mountain landscape&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Always include alt text for images</li>
+                        <li>Optimize images for web (compress, correct format)</li>
+                        <li>Use responsive images for different screen sizes</li>
+                        <li>Provide multiple source formats for video/audio</li>
+                        <li>Use &lt;figure&gt; for images with captions</li>
+                        <li>Consider performance implications of large media files</li>
+                    </ul>
+
+                    <h2>Accessibility Guidelines</h2>
+                    <ul>
+                        <li>Provide descriptive alt text</li>
+                        <li>Include captions for videos</li>
+                        <li>Provide transcripts for audio</li>
+                        <li>Don't rely on color alone to convey information</li>
+                        <li>Make media controls keyboard accessible</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='forms.html'">← Forms & Input</button>
+                    <button class="btn btn-primary" onclick="window.location.href='semantic.html'">Semantic HTML5 →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

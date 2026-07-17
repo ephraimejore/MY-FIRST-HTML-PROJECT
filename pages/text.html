@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master HTML text formatting elements including p, strong, em, span, and more.">
+    <title>Text Elements - HTML Encyclopedia Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>📚 HTML Encyclopedia Pro</h1>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#reference" class="nav-link">Reference</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="min-height: 50vh; padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Text Elements</h1>
+                    <p class="hero-subtitle">Learn text formatting, emphasis, and content organization elements</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="doc-section">
+            <div class="container">
+                <article style="max-width: 800px;">
+                    <h2>Introduction</h2>
+                    <p>Text elements are the most fundamental building blocks of HTML content. They include paragraphs, emphasis elements, and various formatting tags that help structure and present text content.</p>
+
+                    <h2>&lt;p&gt; - Paragraph</h2>
+                    <p>The paragraph element defines a block of text. Browsers automatically add margins before and after paragraphs.</p>
+                    <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
+
+                    <h2>&lt;strong&gt; - Strong Importance</h2>
+                    <p>Indicates text of strong importance. Typically rendered as bold and important for screen readers.</p>
+                    <pre><code>&lt;p&gt;This is &lt;strong&gt;very important&lt;/strong&gt; information.&lt;/p&gt;</code></pre>
+                    <p>Result: This is <strong>very important</strong> information.</p>
+
+                    <h2>&lt;em&gt; - Emphasis</h2>
+                    <p>Marks text with emphasis. Typically rendered as italic and meaningful for screen readers.</p>
+                    <pre><code>&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;</code></pre>
+                    <p>Result: This is <em>emphasized</em> text.</p>
+
+                    <h2>&lt;span&gt; - Generic Container</h2>
+                    <p>A generic inline container for styling or grouping text without semantic meaning.</p>
+                    <pre><code>&lt;p&gt;This text has &lt;span style="color: red;"&gt;colored&lt;/span&gt; content.&lt;/p&gt;</code></pre>
+
+                    <h2>&lt;div&gt; - Block Container</h2>
+                    <p>A generic block-level container used for grouping and styling content.</p>
+                    <pre><code>&lt;div class="container"&gt;
+  &lt;h2&gt;Section Title&lt;/h2&gt;
+  &lt;p&gt;Section content goes here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h2>Other Common Text Elements</h2>
+                    <table>
+                        <tr>
+                            <th>Element</th>
+                            <th>Purpose</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>&lt;b&gt;</td>
+                            <td>Bold text (no semantic meaning)</td>
+                            <td>&lt;b&gt;bold&lt;/b&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;i&gt;</td>
+                            <td>Italic text (no semantic meaning)</td>
+                            <td>&lt;i&gt;italic&lt;/i&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;mark&gt;</td>
+                            <td>Highlighted text</td>
+                            <td>&lt;mark&gt;highlighted&lt;/mark&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;small&gt;</td>
+                            <td>Small text</td>
+                            <td>&lt;small&gt;small&lt;/small&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;del&gt;</td>
+                            <td>Deleted text</td>
+                            <td>&lt;del&gt;removed&lt;/del&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ins&gt;</td>
+                            <td>Inserted text</td>
+                            <td>&lt;ins&gt;added&lt;/ins&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;sub&gt;</td>
+                            <td>Subscript</td>
+                            <td>H&lt;sub&gt;2&lt;/sub&gt;O</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;sup&gt;</td>
+                            <td>Superscript</td>
+                            <td>x&lt;sup&gt;2&lt;/sup&gt;</td>
+                        </tr>
+                    </table>
+
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Use &lt;strong&gt; instead of &lt;b&gt; for semantic importance</li>
+                        <li>Use &lt;em&gt; instead of &lt;i&gt; for semantic emphasis</li>
+                        <li>Keep paragraphs focused on a single idea</li>
+                        <li>Use proper heading hierarchy</li>
+                        <li>Don't use text elements for styling - use CSS instead</li>
+                    </ul>
+
+                    <h2>Accessibility Tips</h2>
+                    <ul>
+                        <li>Screen readers announce semantic elements differently</li>
+                        <li>&lt;strong&gt; and &lt;em&gt; convey meaning beyond visual styling</li>
+                        <li>Don't use &lt;b&gt; and &lt;i&gt; for semantic meaning</li>
+                        <li>Ensure sufficient color contrast for visibility</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-secondary" onclick="window.location.href='document.html'">← Document Structure</button>
+                    <button class="btn btn-primary" onclick="window.location.href='links.html'">Links & Navigation →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/app.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>
