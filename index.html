@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Encyclopedia Pro - The most comprehensive HTML reference guide for web developers">
+    <meta name="theme-color" content="#6366f1">
+    <title>HTML Encyclopedia Pro - Complete HTML Reference</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>📚 HTML Encyclopedia Pro</h1>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#reference" class="nav-link">Reference</a>
+                    <a href="#tutorials" class="nav-link">Tutorials</a>
+                    <a href="#playground" class="nav-link">Playground</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="animated-bg"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Master HTML Today</h1>
+                    <p class="hero-subtitle">The most comprehensive, beginner-friendly HTML reference guide with interactive examples and expert guidance</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="startBtn">Get Started</button>
+                        <button class="btn btn-secondary" id="exploreBtn">Explore Docs</button>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="code-animation">
+                        <div class="code-line line-1">&lt;html&gt;</div>
+                        <div class="code-line line-2">&lt;body&gt;</div>
+                        <div class="code-line line-3">&lt;h1&gt;Welcome&lt;/h1&gt;</div>
+                        <div class="code-line line-4">&lt;/body&gt;</div>
+                        <div class="code-line line-5">&lt;/html&gt;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-wrapper">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Search HTML tags, attributes, and more..."
+                        aria-label="Search documentation"
+                    >
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card fade-in-up">
+                        <div class="stat-number" data-count="150">0</div>
+                        <p class="stat-label">HTML Elements</p>
+                    </div>
+                    <div class="stat-card fade-in-up">
+                        <div class="stat-number" data-count="500">0</div>
+                        <p class="stat-label">Code Examples</p>
+                    </div>
+                    <div class="stat-card fade-in-up">
+                        <div class="stat-number" data-count="1000">0</div>
+                        <p class="stat-label">Best Practices</p>
+                    </div>
+                    <div class="stat-card fade-in-up">
+                        <div class="stat-number" data-count="98">0</div>
+                        <p class="stat-label">Browser Support %</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Documentation Cards -->
+        <section class="featured-cards" id="reference">
+            <div class="container">
+                <h2>Popular HTML Elements</h2>
+                <div class="cards-grid">
+                    <!-- Document Tags -->
+                    <a href="pages/document.html" class="doc-card card-hover">
+                        <div class="card-icon">📄</div>
+                        <h3>Document Structure</h3>
+                        <p>Learn about html, head, body, and other fundamental elements that form the backbone of every webpage.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <!-- Text Tags -->
+                    <a href="pages/text.html" class="doc-card card-hover">
+                        <div class="card-icon">✍️</div>
+                        <h3>Text Elements</h3>
+                        <p>Master p, div, span, strong, em, and all text formatting elements with practical examples.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <!-- Links -->
+                    <a href="pages/links.html" class="doc-card card-hover">
+                        <div class="card-icon">🔗</div>
+                        <h3>Links & Navigation</h3>
+                        <p>Discover how to create effective links with the anchor tag and build intuitive navigation systems.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <!-- Lists -->
+                    <a href="pages/lists.html" class="doc-card card-hover">
+                        <div class="card-icon">📋</div>
+                        <h3>Lists & Collections</h3>
+                        <p>Explore ul, ol, li, and dl elements for organizing and presenting content in lists.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <!-- Tables -->
+                    <a href="pages/tables.html" class="doc-card card-hover">
+                        <div class="card-icon">📊</div>
+                        <h3>Tables & Data</h3>
+                        <p>Learn to create structured data tables with proper semantics and accessibility features.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <!-- Forms -->
+                    <a href="pages/forms.html" class="doc-card card-hover">
+                        <div class="card-icon">📝</div>
+                        <h3>Forms & Input</h3>
+                        <p>Master form elements, input types, validation, and create interactive user interfaces.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <!-- Media -->
+                    <a href="pages/media.html" class="doc-card card-hover">
+                        <div class="card-icon">🎨</div>
+                        <h3>Media & Embedding</h3>
+                        <p>Work with images, audio, video, and other multimedia elements in your HTML documents.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <!-- Semantic HTML -->
+                    <a href="pages/semantic.html" class="doc-card card-hover">
+                        <div class="card-icon">🏛️</div>
+                        <h3>Semantic HTML5</h3>
+                        <p>Build accessible and meaningful web structures with semantic elements like article, section, and nav.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Path -->
+        <section class="learning-path">
+            <div class="container">
+                <h2>Your Learning Journey</h2>
+                <div class="path-steps">
+                    <div class="step step-1">
+                        <div class="step-number">1</div>
+                        <h3>Foundations</h3>
+                        <p>Start with HTML basics and document structure</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step step-2">
+                        <div class="step-number">2</div>
+                        <h3>Elements</h3>
+                        <p>Learn all HTML elements and their uses</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step step-3">
+                        <div class="step-number">3</div>
+                        <h3>Forms</h3>
+                        <p>Master interactive forms and inputs</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step step-4">
+                        <div class="step-number">4</div>
+                        <h3>Advanced</h3>
+                        <p>Explore semantic HTML and best practices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Build Amazing Websites?</h2>
+                <p>Start your HTML journey today with our interactive playground</p>
+                <button class="btn btn-primary btn-large" id="playgroundBtn">Open Playground</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📚 HTML Encyclopedia Pro</h4>
+                    <p>Your complete guide to mastering HTML. Built with ❤️ for web developers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#reference">Reference</a></li>
+                        <li><a href="#tutorials">Tutorials</a></li>
+                        <li><a href="#playground">Playground</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="GitHub">⚙️</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HTML Encyclopedia Pro. All rights reserved. | Built with Vanilla HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/progress.js"></script>
+</body>
+</html>
